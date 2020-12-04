@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="778c88a0-2e90-4bc8-8672-10cba2a5a2fd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/SwitchColor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/Goal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/Ground.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Srcipts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Srcipts/SwitchColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Srcipts/Ground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Srcipts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Srcipts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Srcipts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Srcipts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Srcipts/Goal.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jAaxQCEgXMumyE2KdixcGIJr0s" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="778c88a0-2e90-4bc8-8672-10cba2a5a2fd" name="Default Changelist" comment="" />
+      <created>1603249601560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603249601560</updated>
+      <workItem from="1603249612243" duration="1529000" />
+      <workItem from="1603293927328" duration="4552000" />
+      <workItem from="1603371040734" duration="3591000" />
+      <workItem from="1603796329056" duration="39000" />
+      <workItem from="1603796453740" duration="2307000" />
+      <workItem from="1604045301657" duration="559000" />
+      <workItem from="1604248409144" duration="8000" />
+      <workItem from="1604248482453" duration="37000" />
+      <workItem from="1604248574390" duration="41000" />
+      <workItem from="1604249171578" duration="224000" />
+      <workItem from="1604249688975" duration="1057000" />
+      <workItem from="1604374033202" duration="708000" />
+      <workItem from="1605713818792" duration="1427000" />
+      <workItem from="1605776981537" duration="2156000" />
+      <workItem from="1607069583705" duration="2126000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="177" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607071678335">
+      <screen x="54" y="23" width="1312" height="745" />
+    </state>
+    <state x="177" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/54.23.1312.745@54.23.1312.745" timestamp="1607071678334" />
+    <state x="214" y="23" key="SettingsEditor" timestamp="1604249712897">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="214" y="23" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1604249712897" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Srcipts/Goal.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Srcipts/Goal.cs" initialLine="19">
+            <startOffsets>
+              <option value="422" />
+            </startOffsets>
+            <endOffsets>
+              <option value="450" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
