@@ -4,7 +4,18 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-
+    public static AudioManager S;
+    private void Awake() {
+        if (S == null) {
+            S = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
+    
     public AudioSource playerSFX;
     public AudioSource stageSFX;
     
@@ -13,7 +24,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

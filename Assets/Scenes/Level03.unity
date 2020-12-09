@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -436,6 +437,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -792,6 +794,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1032,6 +1035,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1339,7 +1343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentType: 4
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  endColor: {r: 0, g: 0, b: 0, a: 1}
+  endColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
 --- !u!212 &1789071564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1661,6 +1665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6448fdd46b5464c89418ed960e474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSFX: {fileID: 0}
+  stageSFX: {fileID: 0}
 --- !u!82 &2143922291
 AudioSource:
   m_ObjectHideFlags: 0

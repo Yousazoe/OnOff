@@ -21,8 +21,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         colorObjs = FindObjectsOfType<SwitchColor>();
-        UIManager.S.RefreshSkullText(deadCount);
-        UIManager.S.RefreshStarText(starCount);
+
+        if (UIManager.S != null)
+        {
+            UIManager.S.RefreshSkullText(deadCount);
+            UIManager.S.RefreshStarText(starCount);
+        }
+        
     }
     
     public void SwitchAllColor()
@@ -51,7 +56,7 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<PlayerController>().Revive();
     }
 
-    public void ToNextStage()
+    public void NextStage()
     {
         starCount++;
         UIManager.S.RefreshStarText(starCount);

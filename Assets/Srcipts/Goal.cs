@@ -15,10 +15,10 @@ public class Goal : MonoBehaviour
 
     public void ToNextStage()
     {
-        GameManager.S.ToNextStage();
+        GameManager.S.NextStage();
     }
     
-
+    
 
     public void EnableCollider()
     {
