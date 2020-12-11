@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float h = Input.GetAxisRaw("Horizontal");
+        
         rb.velocity = new Vector2(h * moveSpeed,rb.velocity.y);
 
         if (h != 0)
@@ -64,11 +65,20 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        Debug.Log("Before Dash " +  dashObj.activeInHierarchy);
+        Debug.Log("Before Dash " +  dashObj.activeSelf);
+        
         if (!isDashing)
         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
+                Debug.Log("Dash Before SetActive" +  dashObj.GetComponent<ParticleSystem>().isPlaying
+                );
+                
                 dashObj.SetActive(true);
+                
+                Debug.Log("Dash After SetActive "+ dashObj.GetComponent<ParticleSystem>().isPlaying
+                );
                 isDashing = true;
                 startDashTime = dashTime;
             }
