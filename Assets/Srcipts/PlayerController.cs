@@ -5,9 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
+    public float dashSpeed;
+    public float dashTime;
+    
     public float jumpForce;
     public float seftDestructionHeight = -6f;
-
+    
+    public GameObject dashObj;
+    
+    private bool isDashing;
+    private float startDashTime;
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sr;
@@ -57,10 +64,35 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (!isDashing)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                dashObj.SetActive(true);
+                isDashing = true;
+                startDashTime = dashTime;
+            }
+        }
+        else
+        {
+            startDashTime -= Time.deltaTime;
+            if (startDashTime <= 0)
+            {
+                isDashing = false;
+                dashObj.SetActive(false);
+            }
+            else
+            {
+                rb.velocity = transform.right * dashSpeed;
+            }
+        }
+        
+
         if (transform.position.y < seftDestructionHeight && sr.enabled)
         {
             Die();
         }
+
     }
 
 

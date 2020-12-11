@@ -609,8 +609,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
+  dashSpeed: 8
+  dashTime: 0.2
   jumpForce: 13
   seftDestructionHeight: -4
+  dashObj: {fileID: 3827134059497917097, guid: 0006b2a53032e4587be76ebd59fd054c, type: 3}
   groundCheck: {fileID: 1893116779}
   whatIsGround:
     serializedVersion: 2
