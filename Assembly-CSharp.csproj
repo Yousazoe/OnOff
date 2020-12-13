@@ -62,6 +62,7 @@
      <Compile Include="Assets\Srcipts\GameManager.cs" />
      <Compile Include="Assets\Srcipts\Goal.cs" />
      <Compile Include="Assets\Srcipts\Ground.cs" />
+     <Compile Include="Assets\Srcipts\MenuManager.cs" />
      <Compile Include="Assets\Srcipts\PlayerController.cs" />
      <Compile Include="Assets\Srcipts\SwitchColor.cs" />
      <Compile Include="Assets\Srcipts\UIManager.cs" />

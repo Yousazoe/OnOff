@@ -9,6 +9,7 @@
           <e p="GameManager.cs" t="Include" />
           <e p="Goal.cs" t="Include" />
           <e p="Ground.cs" t="Include" />
+          <e p="MenuManager.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="SwitchColor.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
