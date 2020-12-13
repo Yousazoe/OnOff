@@ -13,6 +13,7 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="Resolution.cs" t="Include" />
           <e p="SwitchColor.cs" t="Include" />
+          <e p="Trap.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
         </e>
       </e>

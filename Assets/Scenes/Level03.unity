@@ -370,6 +370,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 640830569}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &640830571 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3827134059497917100, guid: 0006b2a53032e4587be76ebd59fd054c,
+    type: 3}
+  m_PrefabInstance: {fileID: 640830569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &726745718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,6 +700,7 @@ MonoBehaviour:
   jumpForce: 13
   seftDestructionHeight: -4
   dashObj: {fileID: 3827134059497917097, guid: 0006b2a53032e4587be76ebd59fd054c, type: 3}
+  ps: {fileID: 640830571}
   groundCheck: {fileID: 1893116779}
   whatIsGround:
     serializedVersion: 2

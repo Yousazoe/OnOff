@@ -745,6 +745,7 @@ MonoBehaviour:
   jumpForce: 13
   seftDestructionHeight: -4
   dashObj: {fileID: 647868396784418348, guid: ac22b0b339bec4c3ea3ee147de42eaff, type: 3}
+  ps: {fileID: 1148691056}
   groundCheck: {fileID: 1840097804}
   whatIsGround:
     serializedVersion: 2
@@ -1475,6 +1476,12 @@ PrefabInstance:
 --- !u!4 &1148691055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3827134059497917098, guid: 0006b2a53032e4587be76ebd59fd054c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1148691054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1148691056 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3827134059497917100, guid: 0006b2a53032e4587be76ebd59fd054c,
     type: 3}
   m_PrefabInstance: {fileID: 1148691054}
   m_PrefabAsset: {fileID: 0}

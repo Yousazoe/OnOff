@@ -66,6 +66,7 @@
      <Compile Include="Assets\Srcipts\PlayerController.cs" />
      <Compile Include="Assets\Srcipts\Resolution.cs" />
      <Compile Include="Assets\Srcipts\SwitchColor.cs" />
+     <Compile Include="Assets\Srcipts\Trap.cs" />
      <Compile Include="Assets\Srcipts\UIManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/apple/Desktop/Unity/Homework/OnOff/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

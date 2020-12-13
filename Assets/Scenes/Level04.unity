@@ -1180,6 +1180,7 @@ MonoBehaviour:
   jumpForce: 13
   seftDestructionHeight: -4
   dashObj: {fileID: 3827134059497917097, guid: 0006b2a53032e4587be76ebd59fd054c, type: 3}
+  ps: {fileID: 1402638939}
   groundCheck: {fileID: 1486639197}
   whatIsGround:
     serializedVersion: 2
@@ -1333,6 +1334,12 @@ PrefabInstance:
 --- !u!4 &1402638938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3827134059497917098, guid: 0006b2a53032e4587be76ebd59fd054c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1402638937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1402638939 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3827134059497917100, guid: 0006b2a53032e4587be76ebd59fd054c,
     type: 3}
   m_PrefabInstance: {fileID: 1402638937}
   m_PrefabAsset: {fileID: 0}
@@ -1675,8 +1682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6448fdd46b5464c89418ed960e474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSFX: {fileID: 0}
-  stageSFX: {fileID: 0}
+  playerAudio: {fileID: 0}
+  stageAudio: {fileID: 0}
+  playerSfx: []
+  stageSfx: []
 --- !u!82 &2014943279
 AudioSource:
   m_ObjectHideFlags: 0

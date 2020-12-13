@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float seftDestructionHeight = -6f;
     
     public GameObject dashObj;
+    public ParticleSystem ps;
     
     private bool isDashing;
     private float startDashTime;
@@ -100,18 +101,24 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void Die()
+    public void Die()
     {
         GameManager.S.PlayerDie();
         AudioManager.S.PlayPlayerSFX(2);
         sr.enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
 
+        ps.Stop();
+        
+        
         GameObject dfx = Instantiate(deadEffect, transform.position, Quaternion.identity);
         Destroy(dfx,2f);
     }
 
     public void Revive()
     {
+        GetComponent<BoxCollider2D>().enabled = true;
+        ps.Play();
         rb.velocity = Vector2.zero;
         sr.enabled = true;
     }
