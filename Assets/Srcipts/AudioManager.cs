@@ -16,10 +16,11 @@ public class AudioManager : MonoBehaviour
     }
     
     
-    public AudioSource playerSFX;
-    public AudioSource stageSFX;
-    
-    
+    public AudioSource playerAudio;
+    public AudioSource stageAudio;
+
+    public AudioClip[] playerSfx;
+    public AudioClip[] stageSfx;
     
     // Start is called before the first frame update
     void Start()
@@ -27,9 +28,15 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayPlayerSFX(int index)
     {
-        
+        playerAudio.clip = playerSfx[index];
+        playerAudio.Play();
+    }
+    
+    public void PlayStageSFX(int index)
+    {
+        stageAudio.clip = stageSfx[index];
+        stageAudio.Play();
     }
 }

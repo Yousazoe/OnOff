@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && IsGround())
         {
             rb.AddForce(Vector3.up * jumpForce,ForceMode2D.Impulse);
+            AudioManager.S.PlayPlayerSFX(0);
         }
         
         anim.SetFloat("Move",Mathf.Abs(h));
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameManager.S.SwitchAllColor();
+            AudioManager.S.PlayPlayerSFX(1);
 
             if (insideBlock)
             {
@@ -109,6 +111,7 @@ public class PlayerController : MonoBehaviour
     void Die()
     {
         GameManager.S.PlayerDie();
+        AudioManager.S.PlayPlayerSFX(2);
         sr.enabled = false;
         
         GameObject dfx = Instantiate(deadEffect,transform.position,Quaternion.identity);

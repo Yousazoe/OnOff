@@ -1305,7 +1305,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4ace49f3d490b2e48a38b8bd5629c5f5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8c26b845e5f014523897a7835a7fe7be, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1415,7 +1415,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6beab582639ff2745a61ea489948f3fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 28c4c865594d34de2bd93a3d3d1fea3a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1607,7 +1607,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fd26633a22fe2394e8c78b713439e3f5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4066baf0de9044bce91687962f7d0bc8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1705,8 +1705,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6448fdd46b5464c89418ed960e474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSFX: {fileID: 0}
-  stageSFX: {fileID: 0}
+  playerAudio: {fileID: 2006705883}
+  stageAudio: {fileID: 2006705882}
+  playerSfx:
+  - {fileID: 8300000, guid: 4066baf0de9044bce91687962f7d0bc8, type: 3}
+  - {fileID: 8300000, guid: 28c4c865594d34de2bd93a3d3d1fea3a, type: 3}
+  - {fileID: 8300000, guid: 8c26b845e5f014523897a7835a7fe7be, type: 3}
+  stageSfx:
+  - {fileID: 8300000, guid: 5545bbbd413e7b74dbbd2bd3fd5092f3, type: 3}
 --- !u!1 &2126757542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,8 +1745,6 @@ MonoBehaviour:
   selectItem:
   - {fileID: 1203643012}
   - {fileID: 1113166279}
-  selectColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-  nonSelectColor: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
   selectItemStartColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   selectItemEndColor: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
   nonSelectItemStartColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}

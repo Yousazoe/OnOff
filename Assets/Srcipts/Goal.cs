@@ -9,6 +9,7 @@ public class Goal : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GetComponent<Animator>().SetTrigger("Goal");
+            AudioManager.S.PlayStageSFX(0);
             GetComponent<CircleCollider2D>().enabled = false;
         }
     }
