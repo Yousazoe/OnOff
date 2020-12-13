@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            UnityEditor.EditorApplication.isPlaying = false;
-            Application.Quit();
+            SceneManager.LoadScene("Menu");
         }
     }
     
