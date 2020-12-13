@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 1113166281}
   - component: {fileID: 1113166280}
   m_Layer: 5
-  m_Name: Title_CONTROL
+  m_Name: Title_ESC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTROL
+  m_Text: ESC GAME
 --- !u!222 &1113166282
 CanvasRenderer:
   m_ObjectHideFlags: 0

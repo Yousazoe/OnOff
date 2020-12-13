@@ -66,21 +66,13 @@ public class PlayerController : MonoBehaviour
                 Die();
             }
         }
-
-        Debug.Log("Before Dash " +  dashObj.activeInHierarchy);
-        Debug.Log("Before Dash " +  dashObj.activeSelf);
         
         if (!isDashing)
         {
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                Debug.Log("Dash Before SetActive" +  dashObj.GetComponent<ParticleSystem>().isPlaying
-                );
-                
                 dashObj.SetActive(true);
                 
-                Debug.Log("Dash After SetActive "+ dashObj.GetComponent<ParticleSystem>().isPlaying
-                );
                 isDashing = true;
                 startDashTime = dashTime;
             }
@@ -113,9 +105,9 @@ public class PlayerController : MonoBehaviour
         GameManager.S.PlayerDie();
         AudioManager.S.PlayPlayerSFX(2);
         sr.enabled = false;
-        
-        GameObject dfx = Instantiate(deadEffect,transform.position,Quaternion.identity);
-        Destroy(dfx,1f);
+
+        GameObject dfx = Instantiate(deadEffect, transform.position, Quaternion.identity);
+        Destroy(dfx,2f);
     }
 
     public void Revive()

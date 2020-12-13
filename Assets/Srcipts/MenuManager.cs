@@ -75,12 +75,13 @@ public class MenuManager : MonoBehaviour
                 loadSceneName = "Level01";
                 break;
             }
-            /*
+            
             case 1:
             {
-                loadSceneName = "Control";
+                UnityEditor.EditorApplication.isPlaying = false;
+                Application.Quit();
                 break;
-            }*/
+            }
         }
 
         SceneManager.LoadScene(loadSceneName);
