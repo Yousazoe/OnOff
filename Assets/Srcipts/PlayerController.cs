@@ -33,30 +33,40 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         sr = GetComponentInChildren<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Move
+        //right h =1 left h = -1 no input h = 0
+        //GetAxis GetAxisRaw
         float h = Input.GetAxisRaw("Horizontal");
         
         rb.velocity = new Vector2(h * moveSpeed,rb.velocity.y);
 
+        
+        //Change Face Direction
         if (h != 0)
         {
             transform.localScale = new Vector3(h,1,1);
         }
+        
 
+        //Apply Jump
         if (Input.GetKeyDown(KeyCode.UpArrow) && IsGround())
         {
             rb.AddForce(Vector3.up * jumpForce,ForceMode2D.Impulse);
             AudioManager.S.PlayPlayerSFX(0);
         }
         
+        //Set Animator
         anim.SetFloat("Move",Mathf.Abs(h));
         anim.SetBool("isGround",IsGround());
 
 
+        //Switch Color
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameManager.S.SwitchAllColor();
@@ -99,7 +109,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
 
     public void Die()
     {

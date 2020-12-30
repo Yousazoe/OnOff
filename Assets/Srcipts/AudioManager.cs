@@ -5,8 +5,10 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager S;
-    private void Awake() {
-        if (S == null) {
+    private void Awake() 
+    {
+        if (S == null) 
+        {
             S = this;
         }
         else
@@ -14,8 +16,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
-    
+
     public AudioSource playerAudio;
     public AudioSource stageAudio;
 

@@ -15,6 +15,10 @@ public class SwitchColor : MonoBehaviour
         {
             case ComponentType.player:
             {
+                //if black
+                //change to white
+                //else
+                //change to black
                 GetComponentInChildren<SpriteRenderer>().color =
                     GetComponentInChildren<SpriteRenderer>().color == startColor ? endColor : startColor;
                 break;

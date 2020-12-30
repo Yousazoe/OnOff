@@ -3,7 +3,12 @@ guid: 282751787b7784e7f9556e4f0b21876c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - dashObj: {instanceID: 0}
+  - ps: {instanceID: 0}
+  - groundCheck: {instanceID: 0}
+  - deadEffect: {fileID: 647868396784418348, guid: ac22b0b339bec4c3ea3ee147de42eaff,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
