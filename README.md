@@ -1,3 +1,25 @@
+---
+title: OnOff-Unity2D游戏开发
+abbrlink: 2445f889
+date: 2020-12-09 23:34:48
+tags:
+  - Unity
+  - 2D Game
+  - Game Develop
+categories: [游戏引擎(Game Engine),Unity]
+index_img:
+banner_img: https://tva1.sinaimg.cn/large/0081Kckwgy1gli1b0wag8j311x0j60t7.jpg
+comment:
+sticky:
+
+---
+
+
+
+本文将使用Unity2D引擎制作一款2D横版跳跃类游戏。
+
+<!--more-->
+
 
 
 ### 项目介绍
@@ -167,7 +189,7 @@ void Update()
 
 所以我们在`Player`上创建子物件`GroundCheck`移到角色脚底，作用就是检测角色是否碰到地板。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt4twtxj30lh0b474f.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm6anwiqnpj30lh0b474f.jpg)
 
 
 
@@ -224,7 +246,7 @@ public class PlayerController : MonoBehaviour
 
 回到Unity设置检测图层为`Ground`：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt2tfqnj30c0052wen.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glr6d7070ij30c0052767.jpg)
 
 
 
@@ -232,7 +254,7 @@ public class PlayerController : MonoBehaviour
 
 Move部分是由`Move`这个Parameter判断的，0播放Player_Idle；1播放Player_Move。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt3ekv1j30ud0cjta7.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glr6hlcranj30ud0cjmyv.jpg)
 
 
 
@@ -471,9 +493,9 @@ void Update()
 
 测试颜色转换功能：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryta9zw3j311w0itq33.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrbjvxjkaj311w0it0t5.jpg)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt14f4uj311v0isaa6.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrbki061lj311v0isjrs.jpg)
 
 
 
@@ -481,11 +503,11 @@ void Update()
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt5a74ej310g0kqtah.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gm6ao0dkzyj310g0kqtah.jpg)
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt84zzvj310g0kq760.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glr5vor43ej310g0kq0va.jpg)
 
 
 
@@ -531,11 +553,8 @@ void Update()
 public void Die()
 {
   GameManager.S.PlayerDie();
-  AudioManager.S.PlayPlayerSFX(2);
   sr.enabled = false;
   GetComponent<BoxCollider2D>().enabled = false;
-
-  ps.Stop();
 
   GameObject dfx = Instantiate(deadEffect, transform.position, Quaternion.identity);
   Destroy(dfx,2f);
@@ -554,7 +573,7 @@ public void Die()
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt2bqq0j30mf0bxdg7.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrckakqhsj30mf0bx74v.jpg)
 
 
 
@@ -613,7 +632,7 @@ public class GameManager : MonoBehaviour
 
 回到Unity将结束动画中最后帧中的`Function`赋值给`ToNextStage()`以触发：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt486owj30bq05jaa1.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrcugvl4gj30bq05j74i.jpg)
 
 ​	
 
@@ -623,7 +642,7 @@ public class GameManager : MonoBehaviour
 
 搭建UI组件，放入素材中的图片，挂载颜色转换脚本`SwitchColor.cs`同时将类型更改为`Image`或`Text`：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt3thogj30tx0bv3z9.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrx0hlcfdj30tx0bv0tt.jpg)
 
 
 
@@ -776,7 +795,7 @@ public class AudioManager : MonoBehaviour
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrytaun1fj310a0kp0uq.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrdc6meqlj310a0kptbf.jpg)
 
 
 
@@ -903,7 +922,7 @@ Particle System 模块包含影响整个系统的全局属性。大多数这些�
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt1jkyij311y0lc0uk.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glml20r92kj311y0lcwgz.jpg)
 
 
 
@@ -931,7 +950,7 @@ Particle System 模块包含影响整个系统的全局属性。大多数这些�
 
 
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt7iogij311y0lc763.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glml4ev83kj311y0lc0v6.jpg)
 
 
 
@@ -939,7 +958,7 @@ Particle System 模块包含影响整个系统的全局属性。大多数这些�
 
 最后我们按下`LeftShift`就有一个由绿到蓝的渐变透明残影的效果了：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrytb9p6dj30nx0amt8n.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glmky153orj30nx0amgls.jpg)
 
 
 
@@ -951,7 +970,7 @@ Particle System 模块包含影响整个系统的全局属性。大多数这些�
 
 创建一个三角形物体并拖拽至精灵文件夹`Sprites`中，命名为`Triangle`：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt5omksj304702gt8i.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glnol6g2kqj304702gaa1.jpg)
 
 制作预制体，为其添加组件`BoxCollider2D`，可以在`Edit Collider`中变更碰撞判定。在实际游戏开发中不可能将碰撞体制作修正的和本体一模一样，大部分做法是根据感觉选择一个折中的碰撞判定区域，所以我们框选一个差不多的碰撞体即可。和之前的地板一致，在初始状态下白色的尖刺碰撞体应该是取消勾选碰撞组件的。
 
@@ -963,7 +982,7 @@ Particle System 模块包含影响整个系统的全局属性。大多数这些�
 + `Start Color`：颜色`235`，`235`，`235`；透明度 `255`
 + `End Color`：颜色`255`，`255`，`255`；透明度`255`
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt697g0j30bb039glk.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glnovx64ddj30bb039wen.jpg)
 
 
 
@@ -990,13 +1009,13 @@ public class Trap : MonoBehaviour
 + `Start Color`：颜色`51`，`51`，`51`；透明度 `255`
 + `End Color`：颜色`71`，`71`，`71`；透明度`255`
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt6o46tj30bn0bigm4.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glotyuw5hmj30bn0biaaz.jpg)
 
 
 
 最后将黑白两个尖刺都拖至预制体文件夹`Prefab`中以备之后关卡搭建使用。
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt73i5kj30dq044aa2.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glou01t6tyj30dq0443yn.jpg)
 
 
 
@@ -1024,6 +1043,6 @@ public class Resolution : MonoBehaviour
 
 这里1024x768的分辨率来源是根据UI的`Canvas Scaler`中的分辨率：
 
-![](https://tva1.sinaimg.cn/large/0081Kckwgy1glryt9s3ahj30fk049dfx.jpg)
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1glrd93hiu4j30fk049mxi.jpg)
 
 回到Unity将其挂在到主相机`Main Camera`上，测试运行，UI就恢复了正常，回到原位。
